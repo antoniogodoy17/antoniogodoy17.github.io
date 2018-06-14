@@ -8,9 +8,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="css/index.css">
-
+    
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
 
     <title>Antonio Godoy</title>
 </head>
@@ -22,26 +23,73 @@
     
     <main class="center-align">
         <div class="container">
-            <!-- Profile -->
+            <!-- Profile Picture -->
             <div class="row">
                 <div class="col s12">
-                    <img src="res/img/me(2017).jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                    <img id="profile-picture" src="res/img/me (2017).jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
                 </div>
             </div>
-
-            <!-- Links -->
-            <div>
-                <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Expierences</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Personal</a> Projects</li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">CV</a></li>
-                </ul>
+            <!-- Name -->
+            <div class="row">
+                <h1>Antonio Godoy</h1>
             </div>
-            
+            <!-- Links -->
+            <div class="row links">
+                <div class="col s2">
+                    <a id="aboutBtn" href="#" class="waves-effect waves-light btn-flat">About Me</a>
+                </div>
+                <div class="col s2">
+                    <a id="experienceBtn" href="#" class="waves-effect waves-light btn-flat">Experience</a>
+                </div>
+                <div class="col s2">
+                    <a id="skillsBtn" href="#" class="waves-effect waves-light btn-flat">Skills</a>
+                </div>
+                <div class="col s2">
+                    <a id="projectsBtn" href="#" class="waves-effect waves-light btn-flat">Personal Projects</a>
+                </div>
+                <div class="col s2">
+                    <a id="contactBtn" href="#" class="waves-effect waves-light btn-flat">Contact</a>
+                </div>
+                <div class="col s2">
+                    <a id="cvBtn" href="#" class="waves-effect waves-light btn-flat">CV</a>
+                </div>
+                <!-- <ul>
+                    <li><a id="aboutBtn" href="#" class="waves-effect waves-light btn-flat">About Me</a></li>
+                    <li><a id="experienceBtn" href="#" class="waves-effect waves-light btn-flat">Experience</a></li>
+                    <li><a id="skillsBtn" href="#" class="waves-effect waves-light btn-flat">Skills</a></li>
+                    <li><a id="projectsBtn" href="#" class="waves-effect waves-light btn-flat">Personal Projects</a></li>
+                    <li><a id="contactBtn" href="#" class="waves-effect waves-light btn-flat">Contact</a></li>
+                    <li><a id="cvBtn" href="#" class="waves-effect waves-light btn-flat">CV</a></li>
+                </ul> -->
+            </div>
             <!-- Content -->
+            <div id="content" class="row">
+                    
+            </div>
+            <!-- About Me -->
+            <div id="about-section">
+                <p>About Me</p>
+            </div>
+            <!-- Experience -->
+            <div id="experience-section">
+                <p>Experience</p>
+            </div>
+            <!-- Skills -->
+            <div id="skills-section">
+                <p>Skills</p>
+            </div>
+            <!-- Personal Projects -->
+            <div id="projects-section">
+                <p>Personal Projects</p>
+            </div>
+            <!-- Contact -->
+            <div id="contact-section">
+                <p>Contact</p>
+            </div>
+            <!-- CV -->
+            <div id="cv-section">
+                <p>CV</p>
+            </div>
 
         </div>
 
@@ -50,7 +98,7 @@
     <footer>
 
     </footer>
-<!--JavaScript at end of body for optimized loading-->
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

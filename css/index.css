@@ -11,12 +11,27 @@ main{
 .container{
     background-color: rgba(10, 10, 10, 0.35);
 }
+#profile-picture{
+    height: 200px;
+}
 li{
     float: left;
 }
-a{
+.btn-flat{
     color: #888888;
+    margin: 20px;
 }
-li a{
-    padding: 10px;
+.btn-flat:hover{
+    color:white;
+}
+.btn-flat:focus{
+    border: white 1px solid;
+}
+.btn-flat.active{
+    
+}
+
+
+#about-section, #experience-section, #skills-section, #projects-section, #contact-section, #cv-section{
+    display: none;
 }
