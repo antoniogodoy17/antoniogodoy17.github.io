@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main{
+    background-color: #121212;
+    height: 100vh;
+    color: #888888;
+}
+.container{
+    background-color: rgba(10, 10, 10, 0.35);
+}
+li{
+    float: left;
+}
+a{
+    color: #888888;
+}
+li a{
+    padding: 10px;
+}
