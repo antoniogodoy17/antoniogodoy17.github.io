@@ -8,11 +8,11 @@ body {
 main{
     flex: 1 0 auto;
     /* height: 100vh; */
-    color: #e5e5e5;
+    color: #e0e0e0;
 }
 header{
     text-align: center;
-    color: #e5e5e5;
+    color: #e0e0e0;
 }
 header nav{
     margin-top: 30px;
@@ -21,6 +21,14 @@ header nav{
 header nav ul li {
     float:none;
     display:inline-flex
+}
+header nav ul li a{
+    font-size: 22px;
+    padding: 0px 30px;
+}
+.active-section{
+    border-top: 2px solid #ffffff;
+    font-weight: 500;
 }
 .sidenav{
     /* background-color: #01579b; */
@@ -36,7 +44,23 @@ header nav ul li {
 .container{
     margin: 50px auto;
 }
-#experience-section ul{
+ul.collapsible{
     background-color: white;
-    color: black;
+}
+#projects-section .card .card-content{
+    height: 180px;
+}
+#projects-section .card .card-content .content-footer{
+    font-size: 12px;
+    margin-top: 10px;
+}
+#projects-section .card .card-action a{
+    margin-right: 0;
+    color: #01579b;
+}
+.progress{
+    background-color: #8cccff;
+}
+.progress .determinate{
+    background-color: #01579b;
 }
