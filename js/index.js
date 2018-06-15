@@ -1,7 +1,11 @@
 $("document").ready(function(){
-    var about = $("#about-section").html();
-    $("#content").html(about);
-});
+    $('.sidenav').sidenav();
+    $('.collapsible').collapsible();
+  });
+// $("document").ready(function(){
+//     var about = $("#about-section").html();
+//     $("#content").html(about);
+// });
 
 $(".links").on("click","a", function(){
     var section = $(this).text().toLowerCase();
@@ -10,36 +14,27 @@ $(".links").on("click","a", function(){
         case 'about me':
             var about = $("#about-section").html();
             showSection(about);
-
-            // hideSections();
-            // $("#about-section").fadeIn(2000);
+            activate("#aboutBtn");
             break;
         case 'experience':
             var experience = $("#experience-section").html();
             showSection(experience);
-            // hideSections();
-            // $("#experience-section").fadeIn(2000);
+            activate("#experienceBtn");
             break;
         case 'skills':
             var skills = $("#skills-section").html();
             showSection(skills);
-            // hideSections();
-            // $("#skills-section").fadeIn(2000);
-            // console.log('skills');
+            activate("#skillsBtn");
             break;
-        case 'personal projects':
+        case 'projects':
             var projects = $("#projects-section").html();
             showSection(projects);
-            // hideSections();
-            // $("#projects-section").fadeIn(2000);
-            // console.log('personal projects');
+            activate("#projectsBtn");
             break;
         case 'contact':
             var contact = $("#contact-section").html();
             showSection(contact);
-            // hideSections();
-            // $("#contact-section").fadeIn(2000);
-            // console.log('contacts');
+            activate("#contactBtn");
             break;
         case 'cv':
             alert("downloading");
@@ -47,11 +42,27 @@ $(".links").on("click","a", function(){
     }
 });
 
+function activate(section){
+    var sections = $(".links a");
+    for(var i = 0; i < sections.length; i++){
+        if(sections[i].text !== $(section).text()){
+            $(sections[i]).removeClass("active");
+        }
+    }
+    $(section).addClass("active");
+}
+
 function showSection(html){
+    // $("#loading-circle").show(1000, function(){
+    //     alert("hola");
+    // });
     $("#content").fadeOut(500, function(){
         $("#content").html(html);
+        $("#loading-circle").css("display","inline-block").delay(1000);
+        $("#loading-circle").hide(function(){
+            $("#content").fadeIn(500);
+        });
     });
-    $("#content").fadeIn(500);
 }
 
 function hideSections(){

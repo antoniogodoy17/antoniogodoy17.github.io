@@ -2,36 +2,41 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #121212;
 }
 main{
-    background-color: #121212;
-    height: 100vh;
-    color: #888888;
+    flex: 1 0 auto;
+    /* height: 100vh; */
+    color: #e5e5e5;
 }
-.container{
-    background-color: rgba(10, 10, 10, 0.35);
+header{
+    text-align: center;
+    color: #e5e5e5;
+}
+header nav{
+    margin-top: 30px;
+    box-shadow: none;
+}
+header nav ul li {
+    float:none;
+    display:inline-flex
+}
+.sidenav{
+    /* background-color: #01579b; */
+    background-color: rgba(0,0,0,0.7);
+    /* background-color: rgba(1,87,155,0.7); */
+}
+.sidenav li a{
+    color: white;
 }
 #profile-picture{
     height: 200px;
 }
-li{
-    float: left;
+.container{
+    margin: 50px auto;
 }
-.btn-flat{
-    color: #888888;
-    margin: 20px;
-}
-.btn-flat:hover{
-    color:white;
-}
-.btn-flat:focus{
-    border: white 1px solid;
-}
-.btn-flat.active{
-    
-}
-
-
-#about-section, #experience-section, #skills-section, #projects-section, #contact-section, #cv-section{
-    display: none;
+#experience-section ul{
+    background-color: white;
+    color: black;
 }
