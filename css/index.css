@@ -45,6 +45,9 @@ header nav ul li a{
 .sidenav li a{
     color: white;
 }
+.fixed-action-btn i{
+    color: #01579b;
+}
 #profile-picture{
     height: 200px;
 }
