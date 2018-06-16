@@ -7,15 +7,22 @@ body {
 }
 main{
     flex: 1 0 auto;
-    /* height: 100vh; */
     color: #e0e0e0;
 }
 header{
     text-align: center;
     color: #e0e0e0;
 }
-header nav{
+header img{
+    margin-top: 40px;
+}
+header h1{
+    margin: 10px 0px;
+}
+#quote{
     margin-top: 30px;
+}
+header nav{
     box-shadow: none;
 }
 header nav ul li {
@@ -63,4 +70,31 @@ ul.collapsible{
 }
 .progress .determinate{
     background-color: #01579b;
+}
+footer{
+    color: #e0e0e0;
+}
+footer ul{
+    display: inline-flex;
+}
+footer ul li a{
+    margin: 0px 20px;
+    font-size: 50px;
+}
+footer ul li a i{
+    color: rgba(255,255,255,0.5);
+    transition: 1s;
+}
+footer ul li a i:hover{
+    color: rgba(255,255,255,1);
+    transition: color 500ms;
+}
+.page-footer{
+    padding: 0;
+}
+footer .container{
+    margin: 20px auto;
+}
+footer .footer-copyright .container{
+    margin: 0px auto;
 }

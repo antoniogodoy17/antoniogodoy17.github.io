@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet"> 
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
     
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -27,7 +27,7 @@
         <!-- Profession -->
         <h5>Future Computer Scientist</h5>
         <!-- Quote -->
-        <q><p><i>I believe that everything can be achieved by ambition, dedication, and effort, and that is the key for success.</i></p></q>
+        <p id="quote"><i>"I believe that everything can be achieved by ambition, dedication, and effort, and that is the key for success."</i></p>
 
         <!-- Nav bar -->
         <nav class="light-blue darken-4">
@@ -55,6 +55,15 @@
     
     <main class="center-align">
         <div class="container">
+
+
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large light-blue darken-4">
+                    <i class="large material-icons">vertical_align_top</i>
+                </a>
+            </div>
+            
+
             <!-- About Me -->
             <div id="about-section">
                 <h3>About Me</h3>
@@ -91,13 +100,8 @@
                     </div>
                     <div class="col s4">
                         <h5>What are my interests?</h5>
-                        <ul>
-                            <li>Soccer</li>
-                            <li>Gym</li>
-                            <li>Programming</li>
-                            <li>Videogames</li>
-                            <li>Altruism</li>
-                        </ul>
+
+                        <p>I really enjoy playing soccer, going to the gym, playing video games and everything related to programming and software development. I am also very interested in helping others with everything I have learned to return something to my society and support its development. One of my main goals is to help those who strive for a better future for themselves and for everyone else.</p>
                     </div>
                 </div>
             </div>
@@ -124,22 +128,32 @@
                         <h5>Volunteer</h5>
 
                         <ul class="collapsible black-text">
-                                <li>
-                                    <div class="collapsible-header"><i class="material-icons">beenhere</i>(Jan. 2018 - Actual) Volunteer at BANATI A.C.</div>
-                                    <div class="collapsible-body">
-                                        <span>Social Service. I Help building food pantries for communities in Tijuana and Mexicali.</span>
-                                    </div>
-                                </li>
-                            </ul>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">beenhere</i>(Jan. 2018 - Present) Volunteer at BANATI A.C.</div>
+                                <div class="collapsible-body">
+                                    <span>Social Service. I Help building food pantries for communities in Tijuana and Mexicali.</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                
             </div>
             
             <!-- Skills -->
             <div id="skills-section">
                 <h3>Skills</h3>
+
+                <div class="row">
+                    <div class="col s6">
+                        <h5>Programming</h5>
+                        
+                    </div>
+
+                    <div class="col s6">
+                        <h5>Personal</h5>
+                    </div>
+                </div>
 
                 <div class="row">
                     <div class="col s4">
@@ -285,9 +299,9 @@
 
                 <div class="row">
                     <div class="col s4">
-                        <h5>asdfsdf</h5>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quidem minima dicta non molestiae mollitia ipsa ea officia labore, quas molestias est. Sapiente maxime numquam exercitationem? Error quia et corrupti!</p>
+                        <p>Hello, if you would like to contact me, you can fill out this form and send me an email. You can also reach me out on LinkedIn or Github through the shortcuts on the footer. I look forward to read any message or proposal you have for me.</p>
+                        
+                        <!-- <h5>LinkedIn</h5> -->
                     </div>
 
                     <div class="col s8">
@@ -338,7 +352,7 @@
             <div id="cv-section">
                 <h3>Curriculum Vitae</h3>
 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae magnam, doloremque veniam veritatis cum consectetur dolorum at maiores nulla consequatur soluta quo eligendi doloribus? Dicta nisi accusantium magni sit hic!</p>
+                <p>Here you can download my curriculum vitae in pdf format.</p>
                 <div class="col s12">                    
                     <a id="cvBtn" class="waves-effect waves-light btn"><i class="material-icons right">file_download</i>Download CV</a>
                 </div>
@@ -348,27 +362,24 @@
     </main>
 
 <footer class="light-blue darken-4 page-footer">
-    <div class="container">
+    <div class="container center-align">
         <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+            <div class="col s12">
+                <h5 class="grey-text text-lighten-2">Antonio Godoy</h5>
+                <p class="grey-text text-lighten-2">Feel free to send me a message via LinkedIn or follow me on GitHub.</p>
+        
                 <ul>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    <li><a class="grey-text text-lighten-2" target="_blank" href="https://www.itsmeantonio.com">MyLogo</a></li>
+                    <li><a class="grey-text text-lighten-2" target="_blank" href="https://www.linkedin.com/in/antoniogodoyr"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a class="grey-text text-lighten-2" target="_blank" href="https://github.com/antoniogodoy17"><i class="fab fa-github"></i></a></li>
+                    <li><a class="grey-text text-lighten-2" target="_blank" href="#!"><i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="footer-copyright">
-        <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        <div class="container center-align">
+            Antonio Godoy © 2018. All Rights Reserved.
         </div>
     </div>
 </footer>
