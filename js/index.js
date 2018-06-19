@@ -26,14 +26,14 @@ $("document").ready(function(){
             $(".fixed-action-btn").show();
         }
         else{
+            var sections = $("nav ul li a");
             $(".fixed-action-btn").hide();
+            for(var i = 0; i < sections.length; i++){
+                $(sections[i]).removeClass("active-section");
+            }
         }
     });
 });
-
-// $("nav ul li").on("click","a", function(){
-//     activate($(this));
-// });
 
 $(".fixed-action-btn").click(function(){
     window.scroll({

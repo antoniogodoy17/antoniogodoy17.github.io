@@ -57,6 +57,9 @@ header nav ul li a{
 ul.collapsible{
     background-color: white;
 }
+.collapsible p{
+    margin: 0;
+}
 #projects-section .card .card-content{
     height: 180px;
 }
