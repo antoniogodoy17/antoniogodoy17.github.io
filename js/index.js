@@ -8,50 +8,48 @@ $("document").ready(function(){
         behavior: "smooth"
     });
     
-    $("a[href^='#']").click(function(e) {
+    var scrollLink = $('.scroll');
+
+    scrollLink.click(function(e){
         e.preventDefault();
-        activate($(this));
-
-        $("body, html").animate({
-            scrollTop: $($(this).attr("href")).offset().top,
-        }, 1000);
-
+        $('body,html').animate({
+            scrollTop: $(this.hash).offset().top - 70
+        },1000);
+        console.log($(this.hash).offset().top - 70);
     });
 
     $(window).scroll(function(){
         var topValue = $(this).scrollTop();
-
-        if(topValue > 500){
-            console.log(topValue);
+        
+        if(topValue > 400){
+            $("#fixed-nav").addClass("navbar-fixed");
             $(".fixed-action-btn").show();
         }
         else{
-            var sections = $("nav ul li a");
+            $("#fixed-nav").removeClass("navbar-fixed");
             $(".fixed-action-btn").hide();
-            for(var i = 0; i < sections.length; i++){
-                $(sections[i]).removeClass("active-section");
-            }
         }
+
+        scrollLink.each(function(){
+            var sectionOffset = $(this.hash).offset().top - 64;
+            
+            if(topValue < 400){
+                $(this).parent().removeClass('active-section');
+            }
+            else if(sectionOffset <= topValue+64) {
+                $(this).parent().addClass('active-section');
+                $(this).parent().siblings().removeClass('active-section');
+            }
+        });
     });
 });
 
 $(".fixed-action-btn").click(function(){
-    window.scroll({
-        top: 0,
-        behavior: "smooth"
-    });
+    $('body,html').animate({
+        scrollTop: 0
+    },1000);
 });
 
 $("#cvBtn").click(function(){
     alert("Sorry, my CV is not available to download yet.");
 })
-
-function activate(section){
-    var sections = $("nav ul li a");
-    for(var i = 0; i < sections.length; i++){
-        if(sections[i].text !== $(section).text()){
-            $(sections[i]).removeClass("active-section");
-        }
-    }
-    $(section).addClass("active-section");
-}

@@ -8,6 +8,7 @@ body {
 main{
     flex: 1 0 auto;
     color: #e0e0e0;
+    font-size: 16px;
 }
 header{
     text-align: center;
@@ -22,6 +23,10 @@ header h1{
 #quote{
     margin-top: 30px;
 }
+.navbar-fixed{
+    position: fixed;
+    top: 0;
+}
 header nav{
     box-shadow: none;
 }
@@ -32,14 +37,15 @@ header nav ul li {
 header nav ul li a{
     font-size: 22px;
     padding: 0px 30px;
+    outline: 0;
 }
-.active-section{
+header nav .nav-wrapper .active-section{
     border-top: 2px solid #ffffff;
     font-weight: 500;
 }
 .sidenav{
-    /* background-color: #01579b; */
-    background-color: rgba(0,0,0,0.7);
+    background-color: #01579b;
+    /* background-color: rgba(0,0,0,0.7); */
     /* background-color: rgba(1,87,155,0.7); */
 }
 .sidenav li a{
@@ -60,8 +66,27 @@ ul.collapsible{
 .collapsible p{
     margin: 0;
 }
+#skills-section ul li{
+    margin-top: 20px;
+}
+#skills-section ul li .col{
+    margin-bottom: 5px;
+}
+#skills-section .container{
+    width: 90%;
+}
+#skills-section .btn{
+    padding: 0;
+}
+#skills-section .container .row .col.s3 .btn{
+    width: 130px;
+}
+#skills-section .container .row .col.s4 .btn{
+    width: 178px;
+}
+
 #projects-section .card .card-content{
-    height: 180px;
+    height: 240px;
 }
 #projects-section .card .card-content .content-footer{
     font-size: 12px;
@@ -76,6 +101,9 @@ ul.collapsible{
 }
 .progress .determinate{
     background-color: #01579b;
+}
+#contact-section form{
+    margin-top: 30px;
 }
 footer{
     color: #e0e0e0;
@@ -103,4 +131,32 @@ footer .container{
 }
 footer .footer-copyright .container{
     margin: 0px auto;
+}
+.btn{
+    background-color: #01579b;
+}
+.btn:hover, .btn:focus{
+    background-color:#e0e0e0;
+    color: black;
+}
+.input-field label {
+    color: #e0e0e0;
+}
+.input-field .prefix.active{
+    color: #039be5 ;
+}
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label{
+    color: #039be5 ;
+}
+
+input[type='text']:not(.browser-default):focus:not([readonly]) + label, input[type='email']:not(.browser-default):focus:not([readonly]) + label, textarea:not(.browser-default):focus:not([readonly]) + label{
+	color: #039be5 ;
+}
+input[type='text'].valid:not(.browser-default), input[type='email'].valid:not(.browser-default), textarea.valid:not(.browser-default) {
+	border-bottom: 1px solid #039be5 ; 
+	box-shadow: 0 1px 0 0 #039be5 ;
+}
+input[type='text']:not(.browser-default):focus:not([readonly]), input[type='email']:not(.browser-default):focus:not([readonly]), textarea:not(.browser-default):focus:not([readonly]){
+	border-bottom: 1px solid #039be5 ;
+	box-shadow: 0 1px 0 0 #039be5 ;
 }
