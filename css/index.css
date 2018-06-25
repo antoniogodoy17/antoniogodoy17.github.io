@@ -77,12 +77,8 @@ ul.collapsible{
 }
 #skills-section .btn{
     padding: 0;
-}
-#skills-section .container .row .col.s3 .btn{
-    width: 130px;
-}
-#skills-section .container .row .col.s4 .btn{
-    width: 178px;
+    width: 150px;
+    margin: 10px 0px;
 }
 
 #projects-section .card .card-content{
