@@ -14,6 +14,10 @@
         font-size: 10px;
         margin-top: 10px;
     }
+    #skills-section .btn{
+        font-size: 9px;
+        width: 120px;
+    }
 }
 @media only screen and (min-width: 415px) and (max-width: 600px){
     main{
