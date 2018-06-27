@@ -95,7 +95,8 @@
   ```
   
   * Header and Navigation Bar
-The header will contain a profile picture, your name, what do you do, a quote, and a navigation bar provided by materialize. We also include a sidenav which will appear when the screen size is too small or when the website is accessed from a tablet/smartphone.
+
+    The header will contain a profile picture, your name, what do you do, a quote, and a navigation bar provided by materialize. We also include a sidenav which will appear when the screen size is too small or when the website is accessed from a tablet/smartphone.
 
     *NOTE: I recommend you to edit your picture and make it a square picture.*
 
@@ -365,7 +366,7 @@ The header will contain a profile picture, your name, what do you do, a quote, a
       
   * Footer
   
-  The footer will contain links to your LinkedIn, your Github and your YouTube channel. Feel free to add as many as you like. Remember that all of this content must be inside the footer tag, within the body tag, as shown below.
+    The footer will contain links to your LinkedIn, your Github and your YouTube channel. Feel free to add as many as you like. Remember that all of this content must be inside the footer tag, within the body tag, as shown below.
   ```html
   <footer class="page-footer">
     <div class="container center-align">
@@ -428,13 +429,13 @@ The header will contain a profile picture, your name, what do you do, a quote, a
   git commit -m "Portfolio Website"
   git push -u origin master
   ```
-  * Now, open up your favorite browser and go to https://username.github.io..
+  * Now, open up your favorite browser and go to https://username.github.io.
 
 3. Resources and Demo
 
-  If you would like to see this portfolio up and running, there is a link to it below. I also added the resources I used in order to achieve this, feel free to give them a look.
+    If you would like to see this portfolio up and running, there is a link to it below. I also added the resources I used in order to achieve this, feel free to give them a look.
 
   * [Portfolio](https://antoniogodoy17.github.io/)
-  * [Github Pages] (https://pages.github.com/)
-  * [Formspree] (https://formspree.io/)
-  * [Materialize] (https://materializecss.com/)
+  * [Github Pages](https://pages.github.com/)
+  * [Formspree](https://formspree.io/)
+  * [Materialize](https://materializecss.com/)
