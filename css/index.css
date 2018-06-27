@@ -45,8 +45,6 @@ header nav .nav-wrapper .active-section{
 }
 .sidenav{
     background-color: #01579b;
-    /* background-color: rgba(0,0,0,0.7); */
-    /* background-color: rgba(1,87,155,0.7); */
 }
 .sidenav li a{
     color: white;
@@ -63,9 +61,7 @@ header nav .nav-wrapper .active-section{
 ul.collapsible{
     background-color: white;
 }
-.collapsible p{
-    margin: 0;
-}
+
 #skills-section ul li{
     margin-top: 20px;
 }
