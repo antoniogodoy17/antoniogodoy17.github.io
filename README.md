@@ -422,7 +422,7 @@
 3. Bring It to Life
 
   * After you are done with all your editing, now you can just push it to your github repository using the following commands.
-  *NOTE: Remember that, befor runninf these commands, you must be on the root of your folder, at the same level than your index.html.*
+  *NOTE: Remember that, before running these commands, you must be on the root of your folder, at the same level than your index.html.*
   
   ```
   git add --all
