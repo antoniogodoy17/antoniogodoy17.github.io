@@ -76,6 +76,9 @@ ul.collapsible{
     width: 150px;
     margin: 10px 0px;
 }
+.collection i{
+    color: #01579b;
+}
 
 #projects-section .card .card-content{
     height: 240px;
