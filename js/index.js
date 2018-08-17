@@ -50,6 +50,6 @@ $(".fixed-action-btn").click(function(){
     },1000);
 });
 
-$("#cvBtn").click(function(){
-    alert("Sorry, my CV is not available to download yet.");
-})
+// $("#cvBtn").click(function(){
+//     alert("Sorry, my CV is not available to download yet.");
+// })
