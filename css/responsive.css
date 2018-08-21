@@ -18,6 +18,9 @@
         font-size: 9px;
         width: 120px;
     }
+    .certifications .collection .collection-item.avatar .title{
+        font-size: 12px;
+    }
 }
 @media only screen and (min-width: 415px) and (max-width: 600px){
     main{
@@ -27,11 +30,8 @@
         margin: 0px 15px;
         font-size: 40px;
     }
-    .certifications .collection span.title{
+    .certifications .collection .collection-item.avatar .title{
         font-size: 12px;
-    }
-    .certifications .collection p{
-        font-size: 10px;
     }
 
 }
