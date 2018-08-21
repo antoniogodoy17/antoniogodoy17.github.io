@@ -27,6 +27,13 @@
         margin: 0px 15px;
         font-size: 40px;
     }
+    .certifications .collection span.title{
+        font-size: 12px;
+    }
+    .certifications .collection p{
+        font-size: 10px;
+    }
+
 }
 
 /* Materialize Tablet Devices > 600px */
