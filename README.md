@@ -409,7 +409,7 @@
 
 2. Setup Email Service (optional)
 
-    If you want to receive emails directly from your portfolio website, you can achieve this using [Formspree](https://formspree.io/), which is very easy to use and it also provides you customized forms if you do not want to spend time creating your own. The only thing you hace to do is to follow the instructions provided by Formspree on its website and add the action attribut to your form as shown below:
+    If you want to receive emails directly from your portfolio website, you can achieve this using [Formspree](https://formspree.io/), which is very easy to use and it also provides you customized forms if you do not want to spend time creating your own. The only thing you have to do is to follow the instructions provided by Formspree on its website and add the action attribute to your form as shown below:
 
   ```html
   <form class="col s12" method="POST" action="https://formspree.io/your@email.com">   
